@@ -80,7 +80,7 @@
 | **Mobile Experience** | ⭐⭐⭐⭐⭐ Excelent | ⭐⭐⭐⭐⭐ Excelent | ⭐⭐⭐⭐ Bun |
 | **Ușurință administrare** | ⭐⭐⭐⭐⭐ Foarte ușor | ⭐⭐⭐⭐ Mediu | ⭐⭐⭐⭐⭐ Foarte ușor |
 | **Impact vizual** | ⭐⭐⭐⭐ Profesional | ⭐⭐⭐⭐⭐ Wow factor | ⭐⭐⭐⭐ Solid |
-| **Buget implementare** | €€€ Mediu | €€€€ Mai mare | €€ Accesibil |
+| **Buget implementare** | €1,500-2,000 | €2,000-2,800 | €1,200-1,800 |
 
 ---
 
