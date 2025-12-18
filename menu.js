@@ -35,12 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hide/show navigation on scroll
     let lastScrollTop = 0;
     let scrollThreshold = 5; // Minimum scroll distance to trigger hide/show
+    let ticking = false;
     
-    window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    function updateNavVisibility() {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
         
         // Only hide/show if we've scrolled past the threshold
         if (Math.abs(scrollTop - lastScrollTop) < scrollThreshold) {
+            ticking = false;
             return;
         }
         
@@ -53,5 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         lastScrollTop = scrollTop;
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(updateNavVisibility);
+            ticking = true;
+        }
     });
 });
