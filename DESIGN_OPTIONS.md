@@ -1,6 +1,31 @@
 # Opțiuni Design pentru BBISchool.ro
 
+## Prezentare Vizuală
+
+Cele trei opțiuni de design prezentate mai jos oferă stiluri distincte, fiecare cu avantajele sale:
+
+<div class="design-comparison">
+  <div class="design-comparison-item">
+    <img src="images/design-option-1-modern.svg" alt="Design Opțiunea 1 - Modern Educational">
+    <div class="design-comparison-caption">Opțiunea 1: Modern Educational</div>
+  </div>
+  <div class="design-comparison-item">
+    <img src="images/design-option-2-dynamic.svg" alt="Design Opțiunea 2 - Dynamic & Interactive">
+    <div class="design-comparison-caption">Opțiunea 2: Dynamic & Interactive</div>
+  </div>
+  <div class="design-comparison-item">
+    <img src="images/design-option-3-classic.svg" alt="Design Opțiunea 3 - Classic Academic">
+    <div class="design-comparison-caption">Opțiunea 3: Classic Academic</div>
+  </div>
+</div>
+
+---
+
 ## Opțiunea 1: Modern Educational
+
+<div class="design-visual">
+  <img src="images/design-option-1-modern.svg" alt="Design Opțiunea 1 - Modern Educational - Layout complet">
+</div>
 
 ### Temă Recomandată: Astra / GeneratePress + Customizare
 **Stil:** Minimalist, curat, profesional
@@ -25,6 +50,10 @@
 
 ## Opțiunea 2: Dynamic & Interactive
 
+<div class="design-visual">
+  <img src="images/design-option-2-dynamic.svg" alt="Design Opțiunea 2 - Dynamic & Interactive - Layout complet">
+</div>
+
 ### Temă Recomandată: Kadence Theme + Custom Blocks
 **Stil:** Dinamic, interactiv, modern
 
@@ -48,6 +77,10 @@
 ---
 
 ## Opțiunea 3: Classic Academic
+
+<div class="design-visual">
+  <img src="images/design-option-3-classic.svg" alt="Design Opțiunea 3 - Classic Academic - Layout complet">
+</div>
 
 ### Temă Recomandată: Education Zone / Educate
 **Stil:** Tradițional, academic, încredere

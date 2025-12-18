@@ -17,6 +17,11 @@
 
     <nav>
         <div class="container">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="index.html" >Acasă</a></li>
                 <li><a href="oferta.html" >Oferta</a></li>
@@ -33,7 +38,29 @@
         </div>
         <div class="document-content">
             <h1>Opțiuni Design pentru BBISchool.ro</h1>
+<h2>Prezentare Vizuală</h2>
+<p>Cele trei opțiuni de design prezentate mai jos oferă stiluri distincte, fiecare cu avantajele sale:</p>
+<div class="design-comparison">
+  <div class="design-comparison-item">
+    <img src="images/design-option-1-modern.svg" alt="Design Opțiunea 1 - Modern Educational">
+    <div class="design-comparison-caption">Opțiunea 1: Modern Educational</div>
+  </div>
+  <div class="design-comparison-item">
+    <img src="images/design-option-2-dynamic.svg" alt="Design Opțiunea 2 - Dynamic & Interactive">
+    <div class="design-comparison-caption">Opțiunea 2: Dynamic & Interactive</div>
+  </div>
+  <div class="design-comparison-item">
+    <img src="images/design-option-3-classic.svg" alt="Design Opțiunea 3 - Classic Academic">
+    <div class="design-comparison-caption">Opțiunea 3: Classic Academic</div>
+  </div>
+</div>
+
+<hr>
 <h2>Opțiunea 1: Modern Educational</h2>
+<div class="design-visual">
+  <img src="images/design-option-1-modern.svg" alt="Design Opțiunea 1 - Modern Educational - Layout complet">
+</div>
+
 <h3>Temă Recomandată: Astra / GeneratePress + Customizare</h3>
 <p><strong>Stil:</strong> Minimalist, curat, profesional</p>
 <h3>Caracteristici:</h3>
@@ -58,6 +85,10 @@
 </ul>
 <hr>
 <h2>Opțiunea 2: Dynamic &amp; Interactive</h2>
+<div class="design-visual">
+  <img src="images/design-option-2-dynamic.svg" alt="Design Opțiunea 2 - Dynamic & Interactive - Layout complet">
+</div>
+
 <h3>Temă Recomandată: Kadence Theme + Custom Blocks</h3>
 <p><strong>Stil:</strong> Dinamic, interactiv, modern</p>
 <h3>Caracteristici:</h3>
@@ -83,6 +114,10 @@
 </ul>
 <hr>
 <h2>Opțiunea 3: Classic Academic</h2>
+<div class="design-visual">
+  <img src="images/design-option-3-classic.svg" alt="Design Opțiunea 3 - Classic Academic - Layout complet">
+</div>
+
 <h3>Temă Recomandată: Education Zone / Educate</h3>
 <p><strong>Stil:</strong> Tradițional, academic, încredere</p>
 <h3>Caracteristici:</h3>
@@ -193,5 +228,38 @@
             <p>Versiune: 1.0 | Data: Decembrie 2024</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navUl = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navUl.classList.toggle('active');
+                });
+
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('nav a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navUl.classList.remove('active');
+                    });
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    const isClickInsideNav = event.target.closest('nav');
+                    if (!isClickInsideNav && navUl.classList.contains('active')) {
+                        menuToggle.classList.remove('active');
+                        navUl.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
