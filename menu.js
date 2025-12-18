@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navUl = document.querySelector('nav ul');
+    const nav = document.querySelector('nav');
     
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
@@ -30,4 +31,37 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Hide/show navigation on scroll
+    let lastScrollTop = 0;
+    let scrollThreshold = 5; // Minimum scroll distance to trigger hide/show
+    let ticking = false;
+    
+    function updateNavVisibility() {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        
+        // Only hide/show if we've scrolled past the threshold
+        if (Math.abs(scrollTop - lastScrollTop) < scrollThreshold) {
+            ticking = false;
+            return;
+        }
+        
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down & past 100px - hide nav
+            nav.classList.add('nav-hidden');
+        } else {
+            // Scrolling up - show nav
+            nav.classList.remove('nav-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(updateNavVisibility);
+            ticking = true;
+        }
+    });
 });
