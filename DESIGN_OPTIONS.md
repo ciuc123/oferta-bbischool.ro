@@ -23,10 +23,6 @@ Cele trei opțiuni de design prezentate mai jos oferă stiluri distincte, fiecar
 
 ## Opțiunea 1: Modern Educational
 
-<div class="design-visual">
-  <img src="images/design-option-1-modern.svg" alt="Design Opțiunea 1 - Modern Educational - Layout complet">
-</div>
-
 ### Temă Recomandată: Astra / GeneratePress + Customizare
 **Stil:** Minimalist, curat, profesional
 
@@ -49,10 +45,6 @@ Cele trei opțiuni de design prezentate mai jos oferă stiluri distincte, fiecar
 ---
 
 ## Opțiunea 2: Dynamic & Interactive
-
-<div class="design-visual">
-  <img src="images/design-option-2-dynamic.svg" alt="Design Opțiunea 2 - Dynamic & Interactive - Layout complet">
-</div>
 
 ### Temă Recomandată: Kadence Theme + Custom Blocks
 **Stil:** Dinamic, interactiv, modern
@@ -77,10 +69,6 @@ Cele trei opțiuni de design prezentate mai jos oferă stiluri distincte, fiecar
 ---
 
 ## Opțiunea 3: Classic Academic
-
-<div class="design-visual">
-  <img src="images/design-option-3-classic.svg" alt="Design Opțiunea 3 - Classic Academic - Layout complet">
-</div>
 
 ### Temă Recomandată: Education Zone / Educate
 **Stil:** Tradițional, academic, încredere
