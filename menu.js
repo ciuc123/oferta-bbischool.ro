@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menuToggle.addEventListener('click', function() {
             this.classList.toggle('active');
             navUl.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         });
 
         // Close menu when clicking on a link
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 menuToggle.classList.remove('active');
                 navUl.classList.remove('active');
+                document.body.classList.remove('menu-open');
             });
         });
 
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!isClickInsideNav && navUl.classList.contains('active')) {
                 menuToggle.classList.remove('active');
                 navUl.classList.remove('active');
+                document.body.classList.remove('menu-open');
             }
         });
     }
