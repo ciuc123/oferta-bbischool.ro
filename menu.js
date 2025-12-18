@@ -46,6 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
+        // Close mobile menu when scrolling (if open)
+        if (navUl.classList.contains('active')) {
+            menuToggle.classList.remove('active');
+            navUl.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+        
         if (scrollTop > lastScrollTop && scrollTop > 100) {
             // Scrolling down & past 100px - hide nav
             nav.classList.add('nav-hidden');
