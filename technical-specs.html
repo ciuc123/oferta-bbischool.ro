@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BBISchool.ro - Specificații Tehnice">
+    <title>Specificații Tehnice - BBISchool.ro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏫 BBISchool.ro</h1>
+            <p class="subtitle">Proiect Refacere Website</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" >Acasă</a></li>
+                <li><a href="oferta.html" >Oferta</a></li>
+                <li><a href="design-options.html" >Design</a></li>
+                <li><a href="technical-specs.html" class="active">Specificații</a></li>
+                <li><a href="visual-mockups.html" >Mockup-uri</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="document-header">
+            <h2>Specificații Tehnice</h2>
+        </div>
+        <div class="document-content">
+            <h1>Specificații Tehnice - BBISchool.ro</h1>
+<h2>Stack Tehnologic</h2>
+<h3>Platformă Core</h3>
+<ul>
+<li><strong>WordPress:</strong> Versiunea 6.4+ (Latest)</li>
+<li><strong>PHP:</strong> 8.1+</li>
+<li><strong>MySQL:</strong> 8.0+ sau MariaDB 10.6+</li>
+<li><strong>Server:</strong> Apache/Nginx cu HTTPS</li>
+<li><strong>Hosting:</strong> Recomandat VPS/Cloud (DigitalOcean, AWS, Cloudways)</li>
+</ul>
+<h3>Temă WordPress</h3>
+<p><strong>Opțiuni recomandate:</strong></p>
+<ol>
+<li><strong>Astra Pro</strong> - rapid, lightweight, SEO optimized</li>
+<li><strong>GeneratePress Premium</strong> - performanță excepțională</li>
+<li><strong>Kadence Theme</strong> - flexibil, modern, builder inclus</li>
+</ol>
+<p>Toate temele sunt:</p>
+<ul>
+<li>GPL licensed</li>
+<li>Compatible cu Gutenberg și page builders</li>
+<li>Mobile-first responsive</li>
+<li>WooCommerce ready (pentru viitoare extensii)</li>
+<li>Translation ready (multilingual support)</li>
+</ul>
+<hr>
+<h2>Funcționalități Principale</h2>
+<h3>1. Showcase Evenimente</h3>
+<h4>Plugin Principal: The Events Calendar Pro</h4>
+<p><strong>Funcționalități:</strong></p>
+<ul>
+<li>Calendar vizual interactiv (lunar, săptămânal, listă)</li>
+<li>Categorii evenimente (conferințe, workshopuri, excursii, competiții)</li>
+<li>Filtre avansate (dată, tip, locație)</li>
+<li>Event details: descriere, imagini gallery, organizatori, locație</li>
+<li>Google Maps integration</li>
+<li>Export iCal/Google Calendar</li>
+<li>Event countdown timer</li>
+<li>Featured events în homepage</li>
+<li>Archive pages optimizate</li>
+</ul>
+<p><strong>Alternative:</strong></p>
+<ul>
+<li>EventON (design mai modern)</li>
+<li>Modern Events Calendar (foarte feature-rich)</li>
+</ul>
+<h4>Customizări:</h4>
+<ul>
+<li>Template personalizat pentru single event</li>
+<li>Widget evenimente viitoare în sidebar</li>
+<li>Shortcode pentru embedding events în orice pagină</li>
+<li>Email notifications pentru evenimente noi</li>
+</ul>
+<hr>
+<h3>2. Informații Școală</h3>
+<h4>A. Calendar Școlar</h4>
+<p><strong>Implementare:</strong></p>
+<ul>
+<li>Calendar Gutenberg block personalizat</li>
+<li>Sincronizare cu Google Calendar</li>
+<li>Categorii: vacanțe, examene, evenimente, zile libere</li>
+<li>View: lunar, anual</li>
+<li>Export/Print functionality</li>
+<li>Color coding pe categorii</li>
+</ul>
+<h4>B. Documente și Fișiere</h4>
+<p><strong>Plugin:</strong> Download Manager sau Simple Download Monitor</p>
+<p><strong>Structură:</strong></p>
+<ul>
+<li><strong>Regulamente:</strong> regulament intern, regulament elevi, proceduri</li>
+<li><strong>Formulare:</strong> înscriere, cereri, declarații</li>
+<li><strong>Programe:</strong> orar, planificare anuală</li>
+<li><strong>Documente oficiale:</strong> acreditări, statistici</li>
+<li><strong>Materiale educaționale:</strong> ghiduri, prezentări</li>
+</ul>
+<p><strong>Funcționalități:</strong></p>
+<ul>
+<li>Upload manager intuitiv</li>
+<li>Categorii și taguri</li>
+<li>Search functionality</li>
+<li>Download counter</li>
+<li>Access control (public/privat)</li>
+<li>Version control pentru documente</li>
+<li>Preview pentru PDF-uri</li>
+</ul>
+<h4>C. Secțiuni Informaționale</h4>
+<ul>
+<li>Despre școală (istorie, misiune, valori)</li>
+<li>Echipa (profesori, staff, conducere)</li>
+<li>Infrastructură (clădiri, facilități, laboratoare)</li>
+<li>Rezultate academice (statistici, premii, alumni success)</li>
+<li>Contact (hartă, formular, date contact)</li>
+</ul>
+<hr>
+<h3>3. Formular Aplicare Evenimente</h3>
+<h4>Plugin: Gravity Forms sau WPForms Pro</h4>
+<p><strong>Funcționalități formular:</strong></p>
+<p><strong>Câmpuri:</strong></p>
+<ul>
+<li>Informații personale (nume, prenume, email, telefon)</li>
+<li>CNP (cu validare)</li>
+<li>Data nașterii (date picker)</li>
+<li>Adresă completă</li>
+<li>Școala/Clasa actuală</li>
+<li>Părinte/Tutore legal (nume, telefon, email)</li>
+<li>Selectare eveniment (dropdown dinamic)</li>
+<li>Informații suplimentare (textarea)</li>
+<li>Consimțământ GDPR (checkbox obligatoriu)</li>
+<li>Upload documente (foto copie CI, aviz medical - opțional)</li>
+</ul>
+<p><strong>Validări:</strong></p>
+<ul>
+<li>Email valid</li>
+<li>Telefon format RO</li>
+<li>CNP validare algoritmică</li>
+<li>Câmpuri obligatorii marcate</li>
+<li>File size/type restrictions pentru uploads</li>
+<li>Anti-spam (reCAPTCHA v3)</li>
+</ul>
+<p><strong>Post-submit:</strong></p>
+<ul>
+<li>Email confirmare către aplicant</li>
+<li>Email notificare către admin</li>
+<li>Save în database cu status (pending, approved, rejected)</li>
+<li>Redirect către pagină thank you</li>
+<li>Entry management în WordPress admin</li>
+</ul>
+<p><strong>Dashboard Admin:</strong></p>
+<ul>
+<li>Lista aplicații (tabel sortable, filtrabil)</li>
+<li>Export CSV/Excel</li>
+<li>Bulk actions (approve, reject, delete)</li>
+<li>Status management</li>
+<li>Email template customization</li>
+<li>Statistici aplicații (grafice, rapoarte)</li>
+</ul>
+<h4>Alternative Forms:</h4>
+<ul>
+<li>Formidable Forms (complex features)</li>
+<li>Fluent Forms (modern UI)</li>
+<li>Contact Form 7 + Addons (free option)</li>
+</ul>
+<hr>
+<h2>Plugin-uri Esențiale</h2>
+<h3>SEO &amp; Performance</h3>
+<ul>
+<li><p><strong>Rank Math SEO</strong> sau Yoast SEO Premium</p>
+<ul>
+<li>Meta titles/descriptions</li>
+<li>Schema markup</li>
+<li>XML sitemap</li>
+<li>Breadcrumbs</li>
+<li>Social media integration</li>
+</ul>
+</li>
+<li><p><strong>WP Rocket</strong> (caching)</p>
+<ul>
+<li>Page cache</li>
+<li>Browser cache</li>
+<li>GZIP compression</li>
+<li>Minification (HTML, CSS, JS)</li>
+<li>Lazy loading</li>
+<li>Database optimization</li>
+</ul>
+</li>
+<li><p><strong>ShortPixel</strong> sau Imagify (image optimization)</p>
+<ul>
+<li>Automatic compression</li>
+<li>WebP conversion</li>
+<li>Lazy loading images</li>
+</ul>
+</li>
+</ul>
+<h3>Security</h3>
+<ul>
+<li><p><strong>Wordfence Security</strong></p>
+<ul>
+<li>Firewall</li>
+<li>Malware scanner</li>
+<li>Login security</li>
+<li>Two-factor authentication</li>
+</ul>
+</li>
+<li><p><strong>UpdraftPlus</strong> (backup)</p>
+<ul>
+<li>Automatic scheduled backups</li>
+<li>Cloud storage integration</li>
+<li>One-click restore</li>
+</ul>
+</li>
+</ul>
+<h3>Functionality</h3>
+<ul>
+<li><p><strong>Advanced Custom Fields (ACF) Pro</strong></p>
+<ul>
+<li>Custom fields pentru evenimente</li>
+<li>Flexible layouts</li>
+<li>Repeater fields</li>
+</ul>
+</li>
+<li><p><strong>Contact Form 7</strong> sau alternatives</p>
+</li>
+<li><p><strong>Social media plugins</strong> (share buttons, feeds)</p>
+</li>
+<li><p><strong>Google Analytics</strong> integration</p>
+</li>
+<li><p><strong>Cookie consent</strong> (GDPR compliance)</p>
+</li>
+</ul>
+<hr>
+<h2>Structură Website</h2>
+<h3>Pagini Principale</h3>
+<pre><code>Home (/)
+├── Despre Noi (/despre)
+│   ├── Istorie
+│   ├── Misiune &amp; Viziune
+│   ├── Echipa
+│   └── Facilități
+├── Evenimente (/evenimente)
+│   ├── Calendar Evenimente
+│   ├── Evenimente Viitoare
+│   ├── Evenimente Trecute
+│   └── [Single Event] (/evenimente/nume-eveniment)
+├── Informații (/informatii)
+│   ├── Calendar Școlar (/informatii/calendar)
+│   ├── Documente (/informatii/documente)
+│   │   ├── Regulamente
+│   │   ├── Formulare
+│   │   └── Programe
+│   ├── Admitere (/informatii/admitere)
+│   └── FAQ
+├── Aplică la Evenimente (/aplicare)
+│   └── Formular Aplicare
+├── Galerie (/galerie)
+├── Blog/Noutăți (/blog)
+└── Contact (/contact)
+</code></pre>
+<h3>Meniuri</h3>
+<ul>
+<li><strong>Header Menu:</strong> principale</li>
+<li><strong>Footer Menu:</strong> legal, quick links</li>
+<li><strong>Sidebar Widgets:</strong> evenimente, calendar, documents</li>
+</ul>
+<hr>
+<h2>Design Responsive</h2>
+<h3>Breakpoints</h3>
+<ul>
+<li><strong>Mobile:</strong> 320px - 767px</li>
+<li><strong>Tablet:</strong> 768px - 1024px</li>
+<li><strong>Desktop:</strong> 1025px - 1440px</li>
+<li><strong>Large Desktop:</strong> 1441px+</li>
+</ul>
+<h3>Mobile-first Features</h3>
+<ul>
+<li>Hamburger menu</li>
+<li>Touch-friendly buttons (min 44x44px)</li>
+<li>Optimized images pentru mobile</li>
+<li>Fast loading (&lt; 3s)</li>
+<li>Readable fonts (min 16px body)</li>
+<li>Simplified forms pentru mobile</li>
+</ul>
+<hr>
+<h2>SEO Implementation</h2>
+<h3>On-page SEO</h3>
+<ul>
+<li>Semantic HTML5</li>
+<li>Proper heading hierarchy (H1-H6)</li>
+<li>Alt texts for images</li>
+<li>Internal linking strategy</li>
+<li>Breadcrumbs</li>
+<li>URL structure optimized</li>
+<li>Meta descriptions unique</li>
+</ul>
+<h3>Technical SEO</h3>
+<ul>
+<li>SSL certificate</li>
+<li>Sitemap XML</li>
+<li>Robots.txt optimized</li>
+<li>Schema.org markup:<ul>
+<li>Organization</li>
+<li>Event</li>
+<li>BreadcrumbList</li>
+<li>Educational Organization</li>
+</ul>
+</li>
+<li>Canonical URLs</li>
+<li>301 redirects pentru old pages</li>
+</ul>
+<h3>Performance SEO</h3>
+<ul>
+<li>Page speed &lt; 3s</li>
+<li>Core Web Vitals optimized</li>
+<li>Mobile-friendly test passed</li>
+<li>No mixed content errors</li>
+<li>Minified CSS/JS</li>
+<li>CDN implementation (optional)</li>
+</ul>
+<h3>Content SEO</h3>
+<ul>
+<li>Keyword research</li>
+<li>Content optimization</li>
+<li>Blog strategy</li>
+<li>Regular updates</li>
+</ul>
+<hr>
+<h2>Integration &amp; APIs</h2>
+<h3>Google Services</h3>
+<ul>
+<li>Google Analytics 4</li>
+<li>Google Search Console</li>
+<li>Google Maps</li>
+<li>Google Calendar sync</li>
+<li>reCAPTCHA v3</li>
+</ul>
+<h3>Social Media</h3>
+<ul>
+<li>Facebook Open Graph</li>
+<li>Twitter Cards</li>
+<li>Instagram feed (optional)</li>
+<li>Social sharing buttons</li>
+<li>WhatsApp contact</li>
+</ul>
+<h3>Email</h3>
+<ul>
+<li>SMTP configuration (SendGrid, Mailgun, or hosting SMTP)</li>
+<li>Transactional emails</li>
+<li>Newsletter signup (optional - Mailchimp/Sendinblue)</li>
+</ul>
+<hr>
+<h2>Admin Panel Customization</h2>
+<h3>Custom Dashboard</h3>
+<ul>
+<li>Welcoming widgets</li>
+<li>Quick stats (evenimente, aplicații, vizitatori)</li>
+<li>Quick actions</li>
+<li>Recent activity feed</li>
+<li>Documentation links</li>
+</ul>
+<h3>User Roles</h3>
+<ul>
+<li><strong>Administrator:</strong> full access</li>
+<li><strong>Editor:</strong> content management</li>
+<li><strong>Author:</strong> blog posts</li>
+<li><strong>Subscriber:</strong> formular submissions, profile management</li>
+</ul>
+<h3>Custom Admin Menus</h3>
+<ul>
+<li>Evenimente grouping</li>
+<li>Aplicații management</li>
+<li>Documente management</li>
+<li>Settings dedicated page</li>
+</ul>
+<hr>
+<h2>Testing &amp; Quality Assurance</h2>
+<h3>Pre-launch Checklist</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Cross-browser testing (Chrome, Firefox, Safari, Edge)</li>
+<li><input disabled="" type="checkbox"> Mobile responsiveness toate devices</li>
+<li><input disabled="" type="checkbox"> Forms testing și validation</li>
+<li><input disabled="" type="checkbox"> Email notifications funcționează</li>
+<li><input disabled="" type="checkbox"> SEO audit (Rank Math/Yoast)</li>
+<li><input disabled="" type="checkbox"> Performance test (Google PageSpeed, GTmetrix)</li>
+<li><input disabled="" type="checkbox"> Security scan (Wordfence)</li>
+<li><input disabled="" type="checkbox"> Backup system functional</li>
+<li><input disabled="" type="checkbox"> SSL verificat</li>
+<li><input disabled="" type="checkbox"> 404 pages handled</li>
+<li><input disabled="" type="checkbox"> Contact forms spam protection</li>
+<li><input disabled="" type="checkbox"> GDPR compliance check</li>
+<li><input disabled="" type="checkbox"> Accessibility check (WCAG basics)</li>
+</ul>
+<h3>Tools</h3>
+<ul>
+<li>Google PageSpeed Insights</li>
+<li>GTmetrix</li>
+<li>Pingdom</li>
+<li>Mobile-Friendly Test</li>
+<li>SSL Checker</li>
+<li>Security Headers Check</li>
+</ul>
+<hr>
+<h2>Maintenance &amp; Support</h2>
+<h3>Post-Launch Support (3 luni incluse)</h3>
+<ul>
+<li>Bug fixes</li>
+<li>Security updates</li>
+<li>WordPress core updates</li>
+<li>Plugin updates</li>
+<li>Content updates assistance</li>
+<li>Technical support (email)</li>
+</ul>
+<h3>Optional Maintenance Package</h3>
+<ul>
+<li><strong>Basic:</strong> Monthly updates, monitoring (€50/lună)</li>
+<li><strong>Standard:</strong> Weekly monitoring, updates, monthly reports (€100/lună)</li>
+<li><strong>Premium:</strong> Daily monitoring, priority support, performance optimization (€200/lună)</li>
+</ul>
+<hr>
+<h2>Timeline Implementare</h2>
+<h3>Faza 1: Planning &amp; Design (1 săptămână)</h3>
+<ul>
+<li>Kick-off meeting</li>
+<li>Content gathering</li>
+<li>Design mockups</li>
+<li>Design approval</li>
+</ul>
+<h3>Faza 2: Development (2-3 săptămâni)</h3>
+<ul>
+<li>WordPress setup</li>
+<li>Theme installation și customization</li>
+<li>Plugin configuration</li>
+<li>Content migration</li>
+<li>Functionality implementation</li>
+<li>Forms setup</li>
+</ul>
+<h3>Faza 3: Testing &amp; Launch (1 săptămână)</h3>
+<ul>
+<li>QA testing</li>
+<li>Client review</li>
+<li>Feedback implementation</li>
+<li>Training session</li>
+<li>Go live</li>
+</ul>
+<h3>Total: 4-6 săptămâni</h3>
+<hr>
+<h2>Deliverables</h2>
+<ol>
+<li>Website complet funcțional</li>
+<li>Admin training (video/live session)</li>
+<li>Documentation:<ul>
+<li>User manual (content management)</li>
+<li>Technical documentation</li>
+<li>SEO guidelines</li>
+</ul>
+</li>
+<li>Source code access (if requested)</li>
+<li>3 months support</li>
+</ol>
+<hr>
+<h2>Budgets Estimative</h2>
+<h3>Opțiunea 1: Modern Educational</h3>
+<ul>
+<li>Design &amp; Development: €1,500 - €2,000</li>
+<li>Premium plugins (annual): €200 - €300</li>
+<li>Theme license (annual): €60 - €100</li>
+</ul>
+<h3>Opțiunea 2: Dynamic Interactive</h3>
+<ul>
+<li>Design &amp; Development: €2,000 - €2,800</li>
+<li>Premium plugins (annual): €300 - €400</li>
+<li>Theme license (annual): €100 - €150</li>
+</ul>
+<h3>Opțiunea 3: Classic Academic</h3>
+<ul>
+<li>Design &amp; Development: €1,200 - €1,800</li>
+<li>Premium plugins (annual): €150 - €250</li>
+<li>Theme license (annual): €60 - €100</li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Prețurile includ implementarea completă</li>
+<li>Hosting separat (€10-50/lună)</li>
+<li>Domain separat (€10-15/an)</li>
+<li>SSL inclus în majoritatea hosting-urilor</li>
+</ul>
+<hr>
+<h2>Contact &amp; Next Steps</h2>
+<p>Pentru a începe proiectul avem nevoie de:</p>
+<ol>
+<li>Aprobare design option</li>
+<li>Access la hosting (sau setup nou hosting)</li>
+<li>Content assets (logo, imagini, texte)</li>
+<li>Lista evenimente actuale</li>
+<li>Documente pentru upload</li>
+</ol>
+<p><strong>Timeline start:</strong> 2-3 zile de la aprobare și primirea materialelor</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BBISchool.ro - Toate drepturile rezervate</p>
+            <p>Versiune: 1.0 | Data: Decembrie 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
