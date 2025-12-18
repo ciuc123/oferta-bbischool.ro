@@ -22,6 +22,11 @@ function createHTMLPage(title, content, activeNav) {
 
     <nav>
         <div class="container">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="index.html" ${activeNav === 'home' ? 'class="active"' : ''}>Acasă</a></li>
                 <li><a href="oferta.html" ${activeNav === 'oferta' ? 'class="active"' : ''}>Oferta</a></li>
@@ -47,6 +52,8 @@ function createHTMLPage(title, content, activeNav) {
             <p>Versiune: 1.0 | Data: Decembrie 2024</p>
         </div>
     </footer>
+
+    <script src="menu.js"></script>
 </body>
 </html>`;
 }
