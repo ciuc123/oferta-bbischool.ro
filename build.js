@@ -40,6 +40,11 @@ function createHTMLPage(title, content, activeNav) {
     <main class="container">
         <div class="document-header">
             <h2>${title}</h2>
+            <div class="download-section">
+                <a href="oferta-completa.docx" class="btn-download" download>
+                    📥 Descarcă Oferta Completă (DOCX)
+                </a>
+            </div>
         </div>
         <div class="document-content">
             ${content}
@@ -89,3 +94,12 @@ files.forEach(file => {
 });
 
 console.log('\n✓ All files converted successfully!');
+
+// Generate DOCX file
+console.log('\nGenerating DOCX file...');
+const { execSync } = require('child_process');
+try {
+    execSync('node generate-docx.js', { stdio: 'inherit' });
+} catch (error) {
+    console.error('✗ Error generating DOCX:', error.message);
+}
