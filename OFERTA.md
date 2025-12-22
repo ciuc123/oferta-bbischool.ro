@@ -37,6 +37,6 @@ Website-ul va fi predat complet funcțional, testat pe multiple browsere și dis
 
 ---
 
-**Durata estimată:** 4-6 săptămâni  
+**Durata estimată:** 6-9 săptămâni  
 **Garanție:** 3 luni support tehnic inclus  
 **Mentenanță:** Pachete opționale disponibile
